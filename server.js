@@ -8,4 +8,12 @@ app.get('/', function(req,res){
     res.sendFile(path.join(__dirname,'build','index.html'));
 })
 
+app.get('/map', function(req,res){
+    res.sendFile(path.join(__dirname,'build','map.html'));
+})
+
+app.get('/find', function(req,res){
+    res.sendFile(path.join(__dirname,'build','find.html'));
+})
+
 app.listen(8080);

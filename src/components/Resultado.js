@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Imagen from "./Imagen";
-import Paginacion from "./Paginacion";
 
 class Resultado extends Component {
   mostrarImagenes = () => {
@@ -17,7 +16,6 @@ class Resultado extends Component {
             <Imagen key={imagen.idTeam} imagenes={imagen} />
           ))}
         </div>
-        <Paginacion />
       </React.Fragment>
     );
   };
