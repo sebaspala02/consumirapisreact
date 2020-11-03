@@ -18,7 +18,7 @@ class Buscador extends Component {
               ref={this.busquedaRef}
               type="text"
               className="form-control form-control-lg"
-              placeholder="Buscar tu imagen. Ejem: Futbol"
+              placeholder="Buscar tu imagen. Ejem: Barça"
             />
           </div>
           <div className="form-group col-md-4">

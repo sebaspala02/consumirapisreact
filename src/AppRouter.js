@@ -21,18 +21,20 @@ function AppRouter() {
   return (
     <Router>
       <div className={"site-content"}>
-        // Menú de navegación
-        <nav class="navbar navbar-dark bg-dark">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <Link to="/map">Map</Link>
+        .: Menú de navegación :.
+        <nav className="navbar navbar-dark bg-dark">
+          <ul className="navbar-nav mr-auto">
+            <li className="btn btn-outline-success">
+              <Link to="/map">➡ Mapa de la posición de la Estación Espacial Internacional ⬅</Link>
             </li>
-            <li class="nav-item active">
-              <Link to="/find">Find</Link>
+          </ul>
+          <ul className="navbar-nav xr-auto">
+            <li className="btn btn-outline-success">
+              <Link to="/find">Buscador de Escudos de equipos 🔍</Link>
             </li>
           </ul>
         </nav>
-        // Anclado de rutas al contenido
+        .: Anclado de rutas al contenido :.
         <Route path="/map" component={Map} />
         <Route path="/find" component={Find} />
       </div>
